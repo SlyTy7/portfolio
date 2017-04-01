@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Tyler J. West</title>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
+    <meta content="A simple portfolio highlighting the work of Tyler Jevon West" name="description">
+    <meta content="oSQWpFaQfAmwc6p128bWjfrMA2LYLghpGl50I2qyAEk" name="google-site-verification">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900i|Open+Sans" rel="stylesheet">
+
+    <script>
+               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+               })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+               ga('create', 'UA-86777924-2', 'auto');
+               ga('send', 'pageview');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/portfolioScript.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- TODO:
+        -Make header background visible on iOS.  bug where background: cover not working
+    -->
+    <header class="container-fluid">
+
+        <!-- Navigation Bar -->
+        <nav class="row">
+            <div class="center col-xs-12 col-md-9 col-lg-6">
+                <h2 class="col-xs-4"><a class="nav-button" href="#about">about</a></h2>
+                <h2 class="col-xs-4"><a class="nav-button" href="#projects">projects</a></h2>
+                <h2 class="col-xs-4"><a class="nav-button" href="#contact">contact</a></h2>
+            </div>
+        </nav>
+
+        <!-- Sticky navbar that shows after scrolling -->
+        <nav class="row sticky">
+            <div class="col-xs-12 nav-bar">
+            
+                <div class="hidden-xs col-xs-2 col-sm-6 sticky-name">
+                    <h2>tyler j west</h2>
+                </div>
+
+
+                <h2 class="sticky-button col-xs-4 col-sm-2">
+                    <a href="#about">about</a>
+                </h2>
+
+                <h2 class="sticky-button col-xs-4 col-sm-2">
+                    <a href="#projects">projects</a>
+                </h2>
+
+                <h2 class="sticky-button col-xs-4 col-sm-2">
+                    <a href="#contact">contact</a>
+                </h2>
+
+
+            </div>
+        </nav>
+
+
+        <!-- Name and Title -->
+        <div class="row">
+            <div class="intro col-xs-12">
+                <h1 class="name">Tyler</h1>
+                <h1 class="name">J West</h1>
+                <h2 class="title">//Freelance Web Developer</h2>
+            </div>
+        </div>
+
+    </header>
+    
+
+
+    <!-- Main Portion -->
+    <main class="center container-fluid">
+
+
+        <!-- About Me -->
+        <section class="row about" id="about">
+            <div class="v-center center col-xs-12 col-md-10 body-section">
+
+                <img class="about-pic center col-xs-12 col-sm-10 col-md-6" src="images/me.png" alt="picture of tyler west">
+
+                <p class="about-info center col-xs-12 col-md-10 col-lg-8">I'm a web developer living, working, and relaxing in San Francisco, CA. With a market research background, a coding addiction, and a passion for all things digital, I build mobile-friendly web sites and applications that are equal parts functional and engaging.  Need help on a project? Feel free to reach out to me!
+                </p>
+                
+                <div class="about-skills center col-xs-12 col-md-10 col-lg-8">
+                    <p class="skill-tile">HTML5</p>
+                    <p class="skill-tile">ES6</p>
+                    <p class="skill-tile">CSS3</p>
+                    <p class="skill-tile">Bootstrap</p>
+                    <p class="skill-tile">Responsive</p>
+                    <p class="skill-tile">Javascript</p>
+                    <p class="skill-tile">jQuery</p>
+                    <p class="skill-tile">Drupal</p>
+                    <p class="skill-tile">Wordpress</p>
+                    <p class="skill-tile">Git</p>
+                </div>    
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section class="row projects" id="projects">
+            <div class="v-center center col-xs-12 body-section">
+
+                <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
+                        <img class="project-img" src="images/clock.png" alt="pure css clock">
+                        <div class="overlay">
+
+                            <h3>CSS Clock</h3>
+                            <p class="project-info">A fully functional clock that is almost entirely done with just CSS.  Made to highlight the animation aspects of CSS 3.</p>
+                            <a class="project-link" href="projects/clock/index.html" target="_blank">check it out</a>
+
+                        </div>
+                </div>
+
+                <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
+                        <img class="project-img" src="images/drums.png" alt="javascript drum kit">
+                        <div class="overlay">
+
+                            <h3>Javascript Drum Kit</h3>
+                            <p class="project-info">A basic drum kit that you can use on your computer's keyboard. Very simple app made with just simple javascript.</p>
+                            <a class="project-link" href="projects/drums/index.html" target="_blank">check it out</a>
+                            
+                        </div>
+                </div>
+
+                <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
+                        <img class="project-img" src="images/voiceinator.png" alt="the voiceinator 5000">
+                        <div class="overlay">
+
+                            <h3>The Voiceinator 5000</h3>
+                            <p class="project-info">A javascript app that will speak whatever you type into the text field.  Has the option to change the rate and tone of the voice.</p>
+                            <a class="project-link" href="projects/voiceinator/index.html" target="_blank">check it out</a>
+                            
+                        </div>
+                </div>
+
+                <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
+                        <img class="project-img" src="images/ahead.png" alt="a city and state predictor">
+                        <div class="overlay">
+                            <h3>Type Ahead</h3>
+                            <p class="project-info">A web application that predicts what city and state you are typing before you finish.  Similar to google's predictive search</p>
+                            <a class="project-link" href="projects/ahead/index.html" target="_blank">check it out</a>
+                        </div>
+                </div>
+
+                <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
+                        <img class="project-img" src="images/mole.png" alt="whack a mole game">
+                        <div class="overlay">
+                            <h3>Whack a Mole</h3>
+                            <p class="project-info">A simple HTML and javascript game.  Try to click on the mole as many times as possible in the time limit!  Fun little web app with some basic styling.</p>
+                            <a class="project-link" href="projects/mole/index.html" target="_blank">check it out</a>
+                        </div>
+                </div>
+
+                <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
+                        <img class="project-img" src="images/flex.png" alt="flex panel app">
+                        <div class="overlay">
+                            <h3>Flex Panels</h3>
+                            <p class="project-info">An application made to showcase how just basic javascript (without use of a library) can be used to make responsive and flexible panels.  Click on a panel to see the effects in action.</p>
+                            <a class="project-link" href="projects/flex/index.html" target="_blank">check it out</a>
+                        </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="row contact" id="contact">
+            <div class="v-center center col-xs-12 col-md-10 body-section">
+
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-buttons">
+
+                    <!-- Email Button -->
+                        <a class="contact-button" href="mailto:tyler.j.west.7@gmail.com">
+                            <img class="button-img" src="images/icons/email_icon.png" alt="email icon">
+                            <br/>
+                            Email
+                        </a>        
+
+                    <!-- Phone Button -->
+                        <a class="contact-button" href="tel:15107363210">
+                            <img class="button-img" src="images/icons/phone_icon.png" alt="phone icon">
+                            <br/>
+                            Phone
+                        </a>
+                
+                    <!-- Github Button -->
+                        <a class="contact-button" href="https://github.com/SlyTy7" target="_blank">
+                            <img class="button-img" src="images/icons/github_icon.png" alt="github icon">
+                            <br/>
+                            Github
+                        </a>
+                    
+                    <!-- LinkedIn Button -->
+                        <a class="contact-button" href="https://www.linkedin.com/in/tylerjwest" target="_blank">
+                            <img class="button-img" src="images/icons/linkedin_icon.png" alt="linkedin icon">
+                            <br/>
+                            LinkedIn
+                        </a>
+                    
+                    <!-- Resume Button -->
+                        <a class="contact-button" href="https://drive.google.com/file/d/0B9FaFThWJU2tNl96akVlSEszY00/view?usp=sharing" target="_blank">
+                            <img class="button-img" src="images/icons/resume_icon.png" alt="resume icon">
+                            <br/>
+                            Resume
+                        </a>
+                    
+                </div>
+
+                
+                    <!-- Contact Form -->
+                    <!-- TODO:
+                        -Submit button not working properly on iOS
+                    -->
+                    <form class="col-xs-12 col-md-6 col-lg-8 contact-form" action="submit-form.php" method="post" onSubmit="alert('Thank you! I'll be in touch soon.');">
+
+                        <input type="text" id="input-name" name="name" placeholder="Your/Business Name" required/>
+
+                        <input type="email" id="input-email" name="email" placeholder="Your Email Address" required/>
+
+                        <textarea type="text" id="input-message" name="message" placeholder="Send me a message!" required></textarea>
+
+                        <input type="submit" id="input-submit" name="submit" value="Submit"/>
+
+                    </form>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row footer">
+            <h2 class="center col-xs-12">Copyright © Tyler West 2016-2017 | All Rights Reserved</h2>
+        </div>
+    </footer>
+</body>
+
+</html>
