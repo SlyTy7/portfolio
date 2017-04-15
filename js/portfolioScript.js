@@ -1,5 +1,3 @@
-
-
 // These functions run once page is loaded
 $(window).on('load', function () {
 
