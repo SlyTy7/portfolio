@@ -21,7 +21,9 @@ header {
 }
 
 body {
-    background-color: #c4cac5;
+    background-color: #1d3747;
+    height:100%;
+	-webkit-overflow-scrolling: touch;
 }
 
 footer {
@@ -308,10 +310,7 @@ input, textarea {
     h2{
         font-size: 25px;
     }
-    header {
-        background-attachment: fixed;
-        background-size: 150% 100%;
-    }
+    
 
 @media screen and (max-width: 991px) {
     .contact-form{
