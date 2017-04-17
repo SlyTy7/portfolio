@@ -12,7 +12,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900i|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900i%7COpen+Sans" rel="stylesheet">
 
     <!-- Google Analytics Script -->
     <script>
@@ -91,7 +91,7 @@
 
 
         <!-- About Me -->
-        <section class="row about" id="about">
+        <div class="row about" id="about">
             <div class="v-center center col-xs-12 col-md-10 body-section">
 
                 <img class="about-pic center col-xs-12 col-sm-10 col-md-6" src="images/me.png" alt="picture of tyler west">
@@ -110,11 +110,11 @@
                     <p class="skill-tile">Git</p>
                 </div>    
             </div>
-        </section>
+        </div>
 
 
         <!-- Projects -->
-        <section class="row projects" id="projects">
+        <div class="row projects" id="projects">
             <div class="v-center center col-xs-12 body-section">
 
                 <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
@@ -180,11 +180,11 @@
 
 
             </div>
-        </section>
+        </div>
 
 
         <!-- Contact -->
-        <section class="row contact" id="contact">
+        <div class="row contact" id="contact">
             <div class="v-center center col-xs-12 col-md-10 body-section">
 
                 <div class="col-xs-12 col-md-6 col-lg-4 contact-buttons">
@@ -231,20 +231,20 @@
                     <!-- TODO:
                         -Submit button not working properly on iOS
                     -->
-                    <form class="col-xs-12 col-md-6 col-lg-8 contact-form" action="submit-form.php" method="post" onSubmit="alert('Thank you! I'll be in touch soon.');">
+                    <form class="col-xs-12 col-md-6 col-lg-8 contact-form" action="submit-form.php" method="post">
 
                         <input type="text" id="input-name" name="name" placeholder="Your/Business Name" required/>
 
                         <input type="email" id="input-email" name="email" placeholder="Your Email Address" required/>
 
-                        <textarea type="text" id="input-message" name="message" placeholder="Send me a message!" required></textarea>
+                        <textarea id="input-message" name="message" placeholder="Send me a message!" required></textarea>
 
-                        <input type="submit" id="input-submit" name="submit" value="Submit"/>
+                        <input onclick="alert('Thank you! I\'ll be in touch soon.')" type="submit" id="input-submit" name="submit" value="Submit"/>
 
                     </form>
 
             </div>
-        </section>
+        </div>
     </main>
 
 
