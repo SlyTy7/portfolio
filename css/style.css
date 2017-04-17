@@ -172,6 +172,10 @@ input, textarea {
     margin: 5px auto;
 }
 
+.contact-button:hover {
+	color: #269268;
+}
+
 .button-img {
     height: 50px;
     width: 50px;
