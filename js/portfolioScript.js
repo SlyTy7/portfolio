@@ -1,3 +1,5 @@
+"use strict";
+
 // These functions run once page is loaded
 $(window).on('load', function () {
 
@@ -34,17 +36,17 @@ $(window).on('load', function () {
 
 
 function vCenter() {
-	$('.v-center').each(function(i) {
+	$('.v-center').each(function() {
 		var rowHeight = $(this).parent().outerHeight();
 		var divHeight = $(this).outerHeight();
 		var resize = (rowHeight - divHeight)/2;
 
-		$(this).css({
-			'top': resize,
-		});
+		$(this).css(
+			'top', resize
+		);
 
 	});
-};
+}
 
 
 function sticky() {
@@ -64,4 +66,4 @@ function sticky() {
             }
         });
     });
-};
+}
