@@ -1,175 +1,168 @@
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
+	* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
 }
 
 header {
-    color: white;
-    height: 100vh;
-    background-image: url('../images/background.png');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
+	color: white;
+	height: 100vh;
+	background-image: url('../images/background.png');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
 }
 
 body {
-    background-color: #1d3747;
-    height:100%;
+	background-color: #1d3747;
+	height: 100%;
 	-webkit-overflow-scrolling: touch;
 }
 
 footer {
-    background-color: #269268;
+	background-color: #269268;
 }
 
 h1 {
-    font-size: 175px;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: bolder;
+	font-size: 175px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bolder;
 }
 
 h2 {
-    font-size: 32px;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: lighter;
+	font-size: 32px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: lighter;
 }
 
-h3 {	
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+h3 {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: white;
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    font-weight: lighter;
-    color: white;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	font-weight: lighter;
+	color: white;
 }
 
-a, 
-a:visited, 
-a:active {
-    color: white;
-    text-decoration: none;
+a, a:visited, a:active {
+	color: white;
+	text-decoration: none;
 }
 
 a:hover {
-    color: #7dcb45;
-    text-decoration: none;
+	color: #7dcb45;
+	text-decoration: none;
 }
-
 
 input, textarea {
-    width: 90%;
-    border: 2px solid #269268;
-    border-radius: 4px;
-    margin: 10px;
-    resize: none;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    height: 30px;
+	width: 90%;
+	border: 2px solid #269268;
+	border-radius: 4px;
+	margin: 10px;
+	resize: none;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	height: 30px;
 }
 
-
-
 #input-message {
-    height: 150px;
+	height: 150px;
 }
 
 #input-submit {
-    width: 75px;
-    -webkit-appearance: none;
+	width: 75px;
+	-webkit-appearance: none;
 }
 
 .nav-bar {
-    background-color: #222;
-    opacity: .85;
-    height: 50px;
-    top: 0;
-    position: fixed;
-    z-index: 1030;
-    padding-top: 5px;
-    text-align: right;
+	background-color: #222;
+	opacity: .85;
+	height: 50px;
+	top: 0;
+	position: fixed;
+	z-index: 1030;
+	padding-top: 5px;
+	text-align: right;
 }
 
 .sticky {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 .sticky h2 {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .sticky-name {
-    text-align: left;
-
+	text-align: left;
 }
 
 .sticky-button {
-    font-size: 20px;
-    color: white;
-    padding: 0px 10px;
-    display: inline-block;
-    text-align: center;
+	font-size: 20px;
+	color: white;
+	padding: 0px 10px;
+	display: inline-block;
+	text-align: center;
 }
 
 .sticky-button a:hover {
-    color: #269268;
+	color: #269268;
 }
 
 .nav-button {
-    font-size: 20px;
-    padding: 5px;
-    line-height: 1;
-    color: white;
+	font-size: 20px;
+	padding: 5px;
+	line-height: 1;
+	color: white;
 }
 
 .body-section {
-    color: black;
-    display: inline-block;
-    padding: 80px 20px 40px 20px;
+	color: black;
+	display: inline-block;
+	padding: 80px 20px 40px 20px;
 }
 
 .about {
-    background-color: #1d3747;
-    color: white;
-    min-height: 100vh;
+	background-color: #1d3747;
+	color: white;
+	min-height: 100vh;
 }
 
 .projects {
-    background-color: #269268;
-    min-height: 100vh;
+	background-color: #269268;
+	min-height: 100vh;
 }
 
 .contact {
-    background-color: #222;
-    min-height: 100vh;
+	background-color: #222;
+	min-height: 100vh;
 }
 
 .contact-buttons {
-    margin-top: 117px;
-    margin-bottom : 40px;
-    transform: translateY(-50%);
-    display: flex;
-    padding: 0px;
+	margin-top: 117px;
+	margin-bottom: 40px;
+	transform: translateY(-50%);
+	display: flex;
+	padding: 0px;
 }
 
 .contact-button {
-    height: 50px;
-    width: 50px;
-    margin: 5px auto;
+	height: 50px;
+	width: 50px;
+	margin: 5px auto;
 }
 
 .contact-button:hover {
@@ -177,69 +170,67 @@ input, textarea {
 }
 
 .button-img {
-    height: 50px;
-    width: 50px;
+	height: 50px;
+	width: 50px;
 }
 
 .button-name {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
-    color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	color: white;
 }
 
 .contact-form {
-    border-left: solid white 2px;
+	border-left: solid white 2px;
 }
 
 .name {
-    margin: 0px;
-    color: #e8e8e8;
-    line-height: .8em;
+	margin: 0px;
+	color: #e8e8e8;
+	line-height: .8em;
 }
 
 .title {
-    margin: 0px;
-    color: #7dcb45;
+	margin: 0px;
+	color: #7dcb45;
 }
 
 .v-align {
-    position: relative;
-    top: 50%;
-    transform: translateY(-100%);
-    text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-100%);
+	text-align: center;
 }
 
 .center {
-    text-align: center;
-    margin: 0px auto;
-    float: none;
+	text-align: center;
+	margin: 0px auto;
+	float: none;
 }
 
 .intro {
-    padding-top: 10%;
+	padding-top: 10%;
 }
 
 .about-pic {
-    max-width: 325px;
-    max-height: 325px;
-    border-radius: 100%;
-    padding: 20px;
+	max-width: 325px;
+	max-height: 325px;
+	border-radius: 100%;
+	padding: 20px;
 }
 
 .about-info {
-    padding: 20px;
-    text-align: justify;
-    margin-bottom: 40px;
+	padding: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
 }
 
 .about-skills {
-    padding: 20px;
+	padding: 20px;
 }
 
-
-
-.skill-tile{
+.skill-tile {
 	display: inline-block;
 	background-color: #269268;
 	box-shadow: 3px 3px 5px 0px black;
@@ -251,83 +242,78 @@ input, textarea {
 }
 
 .project-info {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 60px 15px 25px 15px;
-    padding: 10px;
-    border-top: solid white 2px;
-    border-bottom: solid white 2px;
-    font-size: 16px;
-    overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 60px 15px 25px 15px;
+	padding: 10px;
+	border-top: solid white 2px;
+	border-bottom: solid white 2px;
+	font-size: 16px;
+	overflow: hidden;
 }
 
 .project-link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 3px;
 }
 
 .project-img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 3px 3px 5px 0px black;
-    display: block;
+	width: 100%;
+	height: 100%;
+	box-shadow: 3px 3px 5px 0px black;
+	display: block;
 }
 
 .project-tile {
-    padding: 20px
+	padding: 20px
 }
 
 .project-tile:hover .overlay {
-  opacity: .8;
+	opacity: .8;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 20px;
-    opacity: 0;
-    transition: .8s ease-out;
-    background-color: #222;
-    color: white;
-    padding: 15px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 20px;
+	opacity: 0;
+	transition: .8s ease-out;
+	background-color: #222;
+	color: white;
+	padding: 15px;
 }
 
-
-
 .footer h2 {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
-    h1{
-        font-size:115px;
-    }
-    h2{
-        font-size: 25px;
-    }
-    
-
+	h1 {
+		font-size: 115px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+}
 @media screen and (max-width: 991px) {
-    .contact-form{
-        border-left: none;
-    }
-    .contact-buttons {
-        margin-top: 0px;
-    }
+	.contact-form {
+		border-left: none;
+	}
+	.contact-buttons {
+		margin-top: 0px;
+	}
 }
-
 @media screen and (max-width: 330px) {
-    .project-info {
-        font-size: 14px;
-    }
+	.project-info {
+		font-size: 14px;
+	}
 }
-
