@@ -22,7 +22,6 @@ header {
 body {
 	background-color: #1d3747;
 	height: 100%;
-	-webkit-overflow-scrolling: touch;
 }
 
 footer {
