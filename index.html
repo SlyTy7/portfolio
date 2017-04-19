@@ -115,7 +115,7 @@
 
         <!-- Projects -->
         <div class="row projects" id="projects">
-            <div class="v-center center col-xs-12 body-section">
+            <div class="v-center center col-xs-12 col-md-10 col-lg-8 body-section">
 
                 <div onclick="" class="project-tile col-xs-12 col-sm-6 col-md-4">
                         <img class="project-img" src="images/clock.png" alt="pure css clock">
@@ -231,7 +231,7 @@
                     <!-- TODO:
                         -Submit button not working properly on iOS
                     -->
-                    <form class="col-xs-12 col-md-6 col-lg-8 contact-form" action="submit-form.php" method="post">
+                    <form class="col-xs-12 col-md-6 col-lg-8 contact-form" action="submit-form.php" method="post" onsubmit="alert('Thank you! I\'ll be in touch soon.')">
 
                         <input type="text" id="input-name" name="name" placeholder="Your/Business Name" required/>
 
@@ -239,7 +239,7 @@
 
                         <textarea id="input-message" name="message" placeholder="Send me a message!" required></textarea>
 
-                        <input onclick="alert('Thank you! I\'ll be in touch soon.')" type="submit" id="input-submit" name="submit" value="Submit"/>
+                        <input type="submit" id="input-submit" name="submit" value="Submit"/>
 
                     </form>
 
