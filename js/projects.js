@@ -1,47 +1,131 @@
 var projects = {
 	clock : {
 		title: 'CSS Clock',
-		info: popUp(),
-		link: 'projects/clock/index.html'
+		info: 'placeholder',
+		link: 'projects/clock/index.html',
+		image: {
+			source: 'images/clock.png',
+			alt: 'pure css clock'
+		}
 	},
 	drums : {
 		title: 'Pure Javascript Drum Kit',
-		info: popUp(),
-		link: 'projects/drums/index.html'
+		info: 'placeholder',
+		link: 'projects/drums/index.html',
+		image: {
+			source: 'images/drums.png',
+			alt: 'pure javascript drum kit'
+		}
 	},
 	voice : {
 		title: 'The Voiceinator 5000',
-		info: popUp(),
-		link: 'projects/voiceinator/index.html'
+		info: 'placeholder',
+		link: 'projects/voiceinator/index.html',
+		image: {
+			source: 'images/voiceinator.png',
+			alt: 'voiceinator 5000'
+		}
 	},
 	ahead : {
 		title: 'Type Ahead',
-		info: popUp(),
-		link: 'projects/ahead/index.html'
+		info: 'placeholder',
+		link: 'projects/ahead/index.html',
+		image: {
+			source: 'images/ahead.png',
+			alt: 'type ahead'
+		}
 	},
 	whack : {
 		title: 'Whack a Mole',
-		info: popUp(),
-		link: 'projects/mole/index.html'
+		info: 'placeholder',
+		link: 'projects/mole/index.html',
+		image: {
+			source: 'images/mole.png',
+			alt: 'whack a mole'
+		}
 	},
 	flex : {
 		title: 'Flex Panels',
-		info: popUp(),
-		link: 'projects/flex/index.html'
+		info: 'placeholder',
+		link: 'projects/flex/index.html',
+		image: {
+			source: 'images/flex.png',
+			alt: 'flex panels'
+		}
 	},
 	wiki : {
-		title: 'title',
-		info: popUp(),
-		link: 'projects/palceholder.html'
+		title: 'Wikipedia Searcher',
+		info: 'placeholder',
+		link: 'http://codepen.io/SlyTy7/full/LyEXEq/',
+		image: {
+			source: 'http://placehold.it/300x300',
+			alt: 'wikipedia search'
+		}
 	},
 	quotes : {
-		title: 'title',
-		info: popUp(),
-		link: 'projects/palceholder.html'
+		title: 'Random Quote Machine',
+		info: 'placeholder',
+		link: 'http://codepen.io/SlyTy7/full/evxjze',
+		image: {
+			source: 'http://placehold.it/300x300',
+			alt: 'random quote machine'
+		}
 	},
 	weather : {
-		title: 'title',
-		info: popUp(),
-		link: 'projects/palceholder.html'
+		title: 'Weather App',
+		info: 'placeholder',
+		link: 'http://codepen.io/SlyTy7/full/EWBXem',
+		image: {
+			source: 'http://placehold.it/300x300',
+			alt: 'local weather app'
+		}
 	},
+
+	//Trying to add fucntion to object.
+
+	/*
+	display : function(){
+		var finish = "";
+		var container = $('#projects').children('div');
+
+		for(project in projects){
+			console.log(project);
+			var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-lg-4'>";
+			var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
+			var overlayStart = "<div class='overlay'>";
+			var title = "<h3>" + projects[project].title + "</h3>";
+			var info = "<p class='project-info'>" + projects[project].info + "</p>";
+			var link = "<a class='project-link' href='" + projects[project].link + "' target='_blank'>Live View</a>";
+			var end = "</div></div>";
+
+			finish += tileStart + image + overlayStart + title + info + link + end ;
+		};
+	
+		container.html(finish)
+	}
+	*/
 }
+
+
+function displayProjects(){
+	var finish = "";
+	var container = $('#projects').children('div');
+
+	for(project in projects){
+		var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-lg-4'>";
+		var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
+		var overlayStart = "<div class='overlay'>";
+		var title = "<h3>" + projects[project].title + "</h3>";
+		var info = "<p class='project-info'>" + projects[project].info + "</p>";
+		var link = "<a class='project-link' href='" + projects[project].link + "' target='_blank'>Live View</a>";
+		var end = "</div></div>";
+
+		finish += tileStart + image + overlayStart + title + info + link + end ;
+	};
+	
+	container.html(finish)
+}
+
+$(document).ready(function(){
+	displayProjects();
+});
