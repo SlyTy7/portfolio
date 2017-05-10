@@ -1,7 +1,7 @@
 var projects = {
 	clock : {
 		title: 'CSS Clock',
-		info: 'placeholder',
+		info: 'testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing',
 		link: 'projects/clock/index.html',
 		image: {
 			source: 'images/clock.png',
@@ -116,16 +116,55 @@ function displayProjects(){
 		var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
 		var overlayStart = "<div class='overlay'>";
 		var title = "<h3>" + projects[project].title + "</h3>";
-		var info = "<p class='project-info'>" + projects[project].info + "</p>";
-		var link = "<a class='project-link' href='" + projects[project].link + "' target='_blank'>Live View</a>";
+
+		var info = "<button class='info-button'>More Info</button>";
+		var link = "<button><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
+		//var info = "<p class='project-info'>" + projects[project].info + "</p>";
+		//var link = "<a class='project-link' href='" + projects[project].link + "' target='_blank'>Live View</a>";
 		var end = "</div></div>";
 
-		finish += tileStart + image + overlayStart + title + info + link + end ;
+		var modal = "<div class='modal'><div class='modal-content'><span class='close'>&times;</span><p>" + projects[project].info + "</p></div></div>"
+
+		finish += tileStart + image + overlayStart + title + info + link + end + modal;
+		console.log(projects[project].info);
 	};
 	
 	container.html(finish)
 }
 
+
+
+function modalDisplay(){
+	var popup = $('.modal')[0];
+	var btn = $('.info-button');
+	var span = $('.close')[0];
+
+// When user clicks on More Info open popup
+	console.log(popup);
+
+	btn.click(function(){
+		console.log(this);
+		
+		popup.style.display = "block";
+	});
+	
+	
+
+
+// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+    	popup.style.display = "none";
+	}
+
+// When the user clicks anywhere outside of the modal, close it
+	$(window).click(function(event){
+		if (event.target == popup) {
+        	popup.style.display = "none";
+    	}
+	}); 
+};
+
 $(document).ready(function(){
 	displayProjects();
+	modalDisplay();
 });
