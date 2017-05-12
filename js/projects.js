@@ -1,4 +1,31 @@
 var projects = {
+	wiki : {
+		title: 'Wikipedia Searcher',
+		info: 'placeholder',
+		link: 'http://codepen.io/SlyTy7/full/LyEXEq/',
+		image: {
+			source: 'images/wikisearch.png',
+			alt: 'wikipedia search'
+		}
+	},
+	quotes : {
+		title: 'Random Quote Machine',
+		info: 'placeholder',
+		link: 'http://codepen.io/SlyTy7/full/evxjze',
+		image: {
+			source: 'images/quotes.png',
+			alt: 'random quote machine'
+		}
+	},
+	weather : {
+		title: 'Weather App',
+		info: 'placeholder',
+		link: 'http://codepen.io/SlyTy7/full/EWBXem',
+		image: {
+			source: 'images/weather.png',
+			alt: 'local weather app'
+		}
+	},
 	clock : {
 		title: 'CSS Clock',
 		info: 'testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing',
@@ -53,33 +80,7 @@ var projects = {
 			alt: 'flex panels'
 		}
 	},
-	wiki : {
-		title: 'Wikipedia Searcher',
-		info: 'placeholder',
-		link: 'http://codepen.io/SlyTy7/full/LyEXEq/',
-		image: {
-			source: 'http://placehold.it/300x300',
-			alt: 'wikipedia search'
-		}
-	},
-	quotes : {
-		title: 'Random Quote Machine',
-		info: 'placeholder',
-		link: 'http://codepen.io/SlyTy7/full/evxjze',
-		image: {
-			source: 'http://placehold.it/300x300',
-			alt: 'random quote machine'
-		}
-	},
-	weather : {
-		title: 'Weather App',
-		info: 'placeholder',
-		link: 'http://codepen.io/SlyTy7/full/EWBXem',
-		image: {
-			source: 'http://placehold.it/300x300',
-			alt: 'local weather app'
-		}
-	},
+
 
 	//Trying to add fucntion to object.
 
