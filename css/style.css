@@ -1,4 +1,4 @@
-	* {
+* {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -9,14 +9,11 @@
 header {
 	color: white;
 	height: 100vh;
-	background-image: url('../images/background.png');
-	background-size: cover;
+	background: url('../images/background.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
+	background-size: cover;
 }
 
 body {
