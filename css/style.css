@@ -6,15 +6,7 @@
 	-webkit-appearance: none;
 }
 
-header {
-	color: white;
-	height: 100vh;
-	background: url('../images/background.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+
 
 body {
 	background-color: #1d3747;
@@ -75,13 +67,53 @@ input, textarea {
 	height: 30px;
 }
 
-#input-message {
-	height: 150px;
+.body-section {
+	color: black;
+	display: inline-block;
+	padding: 80px 20px 40px 20px;
 }
 
-#input-submit {
-	width: 75px;
-	-webkit-appearance: none;
+.v-align {
+	position: relative;
+	top: 50%;
+	transform: translateY(-100%);
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+	margin: 0px auto;
+	float: none;
+}
+
+.footer h2 {
+	font-size: 16px;
+}
+
+/* HEADER */
+header {
+	color: white;
+	height: 100vh;
+	background: url('../images/background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.intro {
+	padding-top: 10%;
+}
+
+.name {
+	margin: 0px;
+	color: #e8e8e8;
+	line-height: .8em;
+}
+
+.title {
+	margin: 0px;
+	color: #7dcb45;
 }
 
 .nav-bar {
@@ -126,88 +158,13 @@ input, textarea {
 	color: white;
 }
 
-.body-section {
-	color: black;
-	display: inline-block;
-	padding: 80px 20px 40px 20px;
-}
+/* */
 
+/* ABOUT SECTION */
 .about {
 	background-color: #1d3747;
 	color: white;
 	min-height: 100vh;
-}
-
-.projects {
-	background-color: #269268;
-	min-height: 100vh;
-}
-
-.contact {
-	background-color: #222;
-	min-height: 100vh;
-}
-
-.contact-buttons {
-	margin-top: 117px;
-	margin-bottom: 40px;
-	transform: translateY(-50%);
-	display: flex;
-	padding: 0px;
-}
-
-.contact-button {
-	height: 50px;
-	width: 50px;
-	margin: 5px auto;
-}
-
-.contact-button:hover {
-	color: #269268;
-}
-
-.button-img {
-	height: 50px;
-	width: 50px;
-}
-
-.button-name {
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 10px;
-	color: white;
-}
-
-.contact-form {
-	border-left: solid white 2px;
-}
-
-.name {
-	margin: 0px;
-	color: #e8e8e8;
-	line-height: .8em;
-}
-
-.title {
-	margin: 0px;
-	color: #7dcb45;
-}
-
-.v-align {
-	position: relative;
-	top: 50%;
-	transform: translateY(-100%);
-	text-align: center;
-}
-
-.center {
-	text-align: center;
-	margin: 0px auto;
-	float: none;
-}
-
-.intro {
-	padding-top: 10%;
 }
 
 .about-pic {
@@ -236,6 +193,14 @@ input, textarea {
 	color: white;
 	text-align: center;
 	border-radius: 5px;
+}
+/* */
+
+
+/* PROJECTS SECTION */
+.projects {
+	background-color: #269268;
+	min-height: 100vh;
 }
 
 .project-info {
@@ -270,7 +235,7 @@ input, textarea {
 }
 
 .project-tile:hover .overlay {
-	opacity: .8;
+	opacity: .9;
 }
 
 .overlay {
@@ -284,13 +249,120 @@ input, textarea {
 	transition: .8s ease-out;
 	background-color: #222;
 	color: white;
-	padding-top: 30%;
+	padding: 20px;
 }
 
-.footer h2 {
-	font-size: 16px;
+.overlay h3 {
+	font-size: 30px;
 }
 
+.overlay button {
+	color: black;
+	margin: 50px;
+}
+
+.live-button{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	}
+
+.info-button{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.live-button a, .live-button a:visited, .live-button a:active {
+	color: black;
+	text-decoration: none;
+}
+
+
+/* modal background */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* modal box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* */
+
+
+/* CONTACT SECTION */
+#input-message {
+	height: 150px;
+}
+
+#input-submit {
+	width: 75px;
+	-webkit-appearance: none;
+}
+
+.contact {
+	background-color: #222;
+	min-height: 100vh;
+}
+
+.contact-buttons {
+	margin-top: 117px;
+	margin-bottom: 40px;
+	transform: translateY(-50%);
+	display: flex;
+	padding: 0px;
+}
+
+.contact-button {
+	height: 50px;
+	width: 50px;
+	margin: 5px auto;
+}
+
+.contact-button:hover {
+	color: #269268;
+}
+
+.contact-form {
+	border-left: solid white 2px;
+}
+
+.button-img {
+	height: 50px;
+	width: 50px;
+}
+/* */
+
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
 	h1 {
 		font-size: 115px;
@@ -312,43 +384,11 @@ input, textarea {
 		font-size: 14px;
 	}
 }
-
-
-
-/* Modal Background*/
-.modal {
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+@media screen and (min-width: 1200px) {
+	.overlay button {
+	color: black;
+	margin: 15px;
+	}
 }
 
-/* Modal Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+/* */

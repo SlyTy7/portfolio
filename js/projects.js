@@ -115,18 +115,16 @@ function displayProjects(){
 	for(project in projects){
 		var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-lg-4'>";
 		var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
-		var overlayStart = "<div class='overlay'>";
+		var overlay = "<div class='overlay'>";
 		var title = "<h3>" + projects[project].title + "</h3>";
-
-		var info = "<button class='info-button'>More Info</button>";
-		var link = "<button><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
-		//var info = "<p class='project-info'>" + projects[project].info + "</p>";
-		//var link = "<a class='project-link' href='" + projects[project].link + "' target='_blank'>Live View</a>";
-		var end = "</div></div>";
+		var infoLink = "<button class='info-button'>More Info</button>";
+		var liveLink = "<button class='live-button'><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
+		var overlayEnd = "</div>"
+		var tileEnd = "</div>";
 
 		var modal = "<div class='modal'><div class='modal-content'><span class='close'>&times;</span><p>" + projects[project].info + "</p></div></div>"
 
-		finish += tileStart + image + overlayStart + title + info + link + end + modal;
+		finish += tileStart + image + overlay + title + infoLink + liveLink + overlayEnd + tileEnd + modal;
 		console.log(projects[project].info);
 	};
 	
