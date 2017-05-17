@@ -199,7 +199,7 @@ header {
 
 /* PROJECTS SECTION */
 .projects {
-	background-color: #269268;
+	background-color: #1d3747;
 	min-height: 100vh;
 }
 
@@ -226,58 +226,68 @@ header {
 .project-img {
 	width: 100%;
 	height: 100%;
-	box-shadow: 3px 3px 5px 0px black;
 	display: block;
 }
 
 .project-tile {
-	padding: 20px
+	padding: 0px;
+	box-shadow: 3px 3px 5px 0px black;
 }
 
 .project-tile:hover .overlay {
 	opacity: .9;
 }
 
+
+/* overlay */
 .overlay {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	margin: 20px;
 	opacity: 0;
-	transition: .8s ease-out;
+	transition: .4s ease-out;
 	background-color: #222;
 	color: white;
 	padding: 20px;
 }
 
-.overlay h3 {
+.overlay-content {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.overlay-content h3 {
 	font-size: 30px;
+	margin-top: 0px;
 }
 
 .overlay button {
 	color: black;
-	margin: 50px;
+	font-weight: bold;
+    margin: 5px 10px;
+    font-size: 16px;
+    padding: 4px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
 }
-
-.live-button{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	}
-
-.info-button{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-.live-button a, .live-button a:visited, .live-button a:active {
+.overlay button a {
 	color: black;
 	text-decoration: none;
 }
 
+
+/*
+.live-button a, .live-button a:visited, .live-button a:active {
+	color: black;
+	text-decoration: none;
+}
+*/
 
 /* modal background */
 .modal {

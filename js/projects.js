@@ -115,11 +115,11 @@ function displayProjects(){
 	for(project in projects){
 		var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-lg-4'>";
 		var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
-		var overlay = "<div class='overlay'>";
+		var overlay = "<div class='overlay'><div class='overlay-content'>";
 		var title = "<h3>" + projects[project].title + "</h3>";
-		var infoLink = "<button class='info-button'>More Info</button>";
-		var liveLink = "<button class='live-button'><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
-		var overlayEnd = "</div>"
+		var infoLink = "<button>More Info</button>";
+		var liveLink = "<button><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
+		var overlayEnd = "</div></div>"
 		var tileEnd = "</div>";
 
 		var modal = "<div class='modal'><div class='modal-content'><span class='close'>&times;</span><p>" + projects[project].info + "</p></div></div>"
