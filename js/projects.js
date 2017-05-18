@@ -80,31 +80,6 @@ var projects = {
 			alt: 'flex panels'
 		}
 	},
-
-
-	//Trying to add fucntion to object.
-
-	/*
-	display : function(){
-		var finish = "";
-		var container = $('#projects').children('div');
-
-		for(project in projects){
-			console.log(project);
-			var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-lg-4'>";
-			var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
-			var overlayStart = "<div class='overlay'>";
-			var title = "<h3>" + projects[project].title + "</h3>";
-			var info = "<p class='project-info'>" + projects[project].info + "</p>";
-			var link = "<a class='project-link' href='" + projects[project].link + "' target='_blank'>Live View</a>";
-			var end = "</div></div>";
-
-			finish += tileStart + image + overlayStart + title + info + link + end ;
-		};
-	
-		container.html(finish)
-	}
-	*/
 }
 
 
@@ -117,7 +92,7 @@ function displayProjects(){
 		var image = "<img class='project-img' src='" + projects[project].image.source + "' alt='" + projects[project].image.alt + "'>";
 		var overlay = "<div class='overlay'><div class='overlay-content'>";
 		var title = "<h3>" + projects[project].title + "</h3>";
-		var infoLink = "<button>More Info</button>";
+		var infoLink = "<button class='info-button'>More Info</button>";
 		var liveLink = "<button><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
 		var overlayEnd = "</div></div>"
 		var tileEnd = "</div>";
@@ -125,42 +100,36 @@ function displayProjects(){
 		var modal = "<div class='modal'><div class='modal-content'><span class='close'>&times;</span><p>" + projects[project].info + "</p></div></div>"
 
 		finish += tileStart + image + overlay + title + infoLink + liveLink + overlayEnd + tileEnd + modal;
-		console.log(projects[project].info);
 	};
 	
 	container.html(finish)
 }
 
 
-
 function modalDisplay(){
-	var popup = $('.modal')[0];
 	var btn = $('.info-button');
-	var span = $('.close')[0];
+	var close = $('.close');
+	var popup = $('.modal');
 
-// When user clicks on More Info open popup
-	console.log(popup);
-
+// User clicks on More Info open popup
 	btn.click(function(){
-		console.log(this);
-		
-		popup.style.display = "block";
+		var popup = $(this).parents('.project-tile').next('.modal')[0];
+		$(this).parents('.project-tile').next('.modal')[0].style.display = "block";
 	});
-	
-	
 
 
-// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-    	popup.style.display = "none";
-	}
+// User clicks on <span> (x), close the modal
+	close.click(function() {
+    	$(this).parents('.modal')[0].style.display = "none";
+	});
 
-// When the user clicks anywhere outside of the modal, close it
-	$(window).click(function(event){
-		if (event.target == popup) {
-        	popup.style.display = "none";
-    	}
-	}); 
+// User clicks outside modal, close it
+	popup.click(function(event){
+		if(event.target.className == "modal"){
+			this.style.display = "none";
+		}
+	});
+
 };
 
 $(document).ready(function(){
