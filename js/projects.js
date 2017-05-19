@@ -14,7 +14,7 @@ var projects = {
 	},
 	quotes : {
 		title: 'Random Quote Machine',
-		info: 'placeholder',
+		info: 'An application to give you some random quotes when you click on a button.  It also has the ability to tweet the quote to your Twitter profile on the push of a button.',
 		link: 'http://codepen.io/SlyTy7/full/evxjze',
 		tileImage: {
 			source: 'images/quotes.png',
@@ -27,7 +27,7 @@ var projects = {
 	},
 	weather : {
 		title: 'Local Weather App',
-		info: 'placeholder',
+		info: 'This is a small and basic application built to show weather in your current location.',
 		link: 'http://codepen.io/SlyTy7/full/EWBXem',
 		tileImage: {
 			source: 'images/weather.png',
@@ -40,7 +40,7 @@ var projects = {
 	},
 	clock : {
 		title: 'CSS Clock',
-		info: 'testing testing testing testing testing testing testing testing',
+		info: 'A clock built to highlight the animation aspects of CSS.  This was a project I built under the teachings of Wes Bos at Javascript30.com.',
 		link: 'projects/clock/index.html',
 		tileImage: {
 			source: 'images/clock.png',
@@ -52,12 +52,12 @@ var projects = {
 		},
 	},
 	drums : {
-		title: 'Pure Javascript Drum Kit',
-		info: 'placeholder',
+		title: 'Drum Kit',
+		info: 'This is a small drum kit application built with pure Javascript, no frameworks.  This was a project I built under the teachings of Wes Bos at Javascript30.com',
 		link: 'projects/drums/index.html',
 		tileImage: {
 			source: 'images/drums.png',
-			alt: 'pure javascript drum kit'
+			alt: 'thumbnail image of drum kit application'
 		},
 		modalImage: {
 			source: 'images/drumsFull.png',
@@ -66,7 +66,7 @@ var projects = {
 	},
 	voice : {
 		title: 'The Voiceinator 5000',
-		info: 'placeholder',
+		info: 'This is an appliction that reads user entered information, out loud.  It is a text-to-speech application with a few options to change how the voice sounds.  This was a project I built under the teachings of Wes Bos at Javascript30.com',
 		link: 'projects/voiceinator/index.html',
 		tileImage: {
 			source: 'images/voiceinator.png',
@@ -79,7 +79,7 @@ var projects = {
 	},
 	ahead : {
 		title: 'Type Ahead',
-		info: 'placeholder',
+		info: 'A web application that predicts what the user will be typing into the text field.  It is similiar to Google\'s search functionality',
 		link: 'projects/ahead/index.html',
 		tileImage: {
 			source: 'images/ahead.png',
@@ -92,7 +92,7 @@ var projects = {
 	},
 	whack : {
 		title: 'Whack a Mole',
-		info: 'placeholder',
+		info: 'A simple game built based on the whack-a-mole arcade game.',
 		link: 'projects/mole/index.html',
 		tileImage: {
 			source: 'images/mole.png',
@@ -105,7 +105,7 @@ var projects = {
 	},
 	flex : {
 		title: 'Flex Panels',
-		info: 'placeholder',
+		info: 'An image gallery that can be expanded and minimized with flexible panels.  Built with vanilla Javascript with no compilers, libraries, or frameworks',
 		link: 'projects/flex/index.html',
 		tileImage: {
 			source: 'images/flex.png',
