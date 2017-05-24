@@ -124,12 +124,12 @@ function displayProjects(){
 	var container = $('#projects').children('div');
 
 	for(project in projects){
-		var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-lg-4'>";
+		var tileStart = "<div class='project-tile col-xs-12 col-sm-6 col-md-4 col-lg-3'>";
 		var tileImage = "<img class='project-img' src='" + projects[project].tileImage.source + "' alt='" + projects[project].tileImage.alt + "'>";
 		var overlay = "<div class='overlay'><div class='overlay-content'>";
 		var title = "<h3>" + projects[project].title + "</h3>";
 		var infoLink = "<button class='info-button'>More Info</button>";
-		var liveLink = "<button><a href='" + projects[project].link + "' target='_blank'>Live View</a></button>";
+		var liveLink = "<a href='" + projects[project].link + "' target='_blank'>Live View</a>";
 		var overlayEnd = "</div></div>"
 		var tileEnd = "</div>";
 
