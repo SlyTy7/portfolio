@@ -52,15 +52,6 @@ p {
 	color: white;
 }
 
-a, a:visited, a:active {
-	color: white;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #7dcb45;
-	text-decoration: none;
-}
 
 input, textarea {
 	width: 90%;
@@ -113,19 +104,41 @@ header {
 	background-size: cover;
 }
 
-.intro {
-	padding-top: 10%;
+.header-content a {
+	color: white;
+	font-weight: bold;
+    /*margin: 5px 10px;*/
+    font-size: 16px;
+    padding: 4px 10px;
+    background-color: #7dcb45;
+    border-radius: 20px;
+    border-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-content a:hover {
+	color: black;
+	background-color: white;
+	transition: .25s;
+}
+
+.header-content {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.header-buttons {
+	margin: 15px auto;
 }
 
 .name {
 	margin: 0px;
-	color: #e8e8e8;
+	color: white;
 	line-height: .8em;
-}
-
-.title {
-	margin: 0px;
-	color: #7dcb45;
 }
 
 .nav-bar {

@@ -103,7 +103,7 @@ var projects = {
 			alt: 'full size images of whack-a-mole game'
 		},
 	},
-	flex : {
+	/*flex : {
 		title: 'Flex Panels',
 		info: 'An image gallery that can be expanded and minimized with flexible panels.  Built with vanilla Javascript with no compilers, libraries, or frameworks',
 		link: 'projects/flex/index.html',
@@ -115,7 +115,7 @@ var projects = {
 			source: 'images/flexFull.png',
 			alt: 'full size image of flex panels application'
 		},
-	},
+	},*/
 }
 
 

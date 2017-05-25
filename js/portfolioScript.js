@@ -9,11 +9,11 @@ $(window).on('load', function () {
 
 
 	// Vertically center sections
-	vCenter();
+	//vCenter();
 
 
 	// Reruns vCenter on window resize
-	$(window).resize(vCenter);
+	///$(window).resize(vCenter);
 
 
 	// Add smooth scrolling to all links
@@ -34,7 +34,7 @@ $(window).on('load', function () {
 
 
 
-
+/*
 function vCenter() {
 	$('.v-center').each(function() {
 		var rowHeight = $(this).parent().outerHeight();
@@ -47,7 +47,7 @@ function vCenter() {
 
 	});
 }
-
+*/
 
 function sticky() {
     // hide .navbar first
