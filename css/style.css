@@ -76,7 +76,7 @@ input, textarea {
 .body-section {
 	color: black;
 	display: inline-block;
-	padding: 20px;
+	padding: 15px 0px;
 }
 
 .v-align {
@@ -239,11 +239,11 @@ header {
 	width: 100%;
 	height: 100%;
 	display: block;
-	box-shadow: 3px 3px 5px 0px black;
+	/*box-shadow: 3px 3px 5px 0px black;*/
 }
 
 .project-tile {
-	padding: 15px;
+	padding: 0px;
 }
 
 .project-tile:hover .overlay {
@@ -263,7 +263,6 @@ header {
 	background-color: #222;
 	color: white;
 	padding: 20px;
-	margin: 15px;
 }
 
 .overlay-content {
