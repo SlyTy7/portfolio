@@ -9,12 +9,12 @@
 
 
 body {
-	background-color: #1d3747;
+	background-color: #F6F6F6;
 	height: 100%;
 }
 
 footer {
-	background-color: #269268;
+	background-color: #7a87f2;
 }
 
 h1 {
@@ -41,7 +41,6 @@ h3 {
 h4 {
 	font-size: 36px;
 	font-family: 'Open Sans', sans-serif;
-	color: white;
 }
 
 p {
@@ -49,14 +48,17 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	text-align: justify;
 	font-weight: lighter;
-	color: white;
+}
+
+main {
+	overflow: hidden;
 }
 
 
 input, textarea {
 	width: 90%;
-	border: 2px solid #269268;
-	border-radius: 4px;
+	border: 2px solid #fafafa;
+	/*border-radius: 4px;*/
 	margin: 10px;
 	resize: none;
 	font-size: 16px;
@@ -68,6 +70,8 @@ input, textarea {
 	color: black;
 	display: inline-block;
 	padding: 15px 0px;
+	text-align: center;
+    float: none;
 }
 
 .v-align {
@@ -97,21 +101,23 @@ input, textarea {
 header {
 	color: white;
 	height: 100vh;
-	background: url('../images/background.png') no-repeat center center fixed;
+	background: url('../images/mountains.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	
+	/*background-color: darkgray;*/
 }
 
 .header-content a {
 	color: white;
 	font-weight: bold;
-    /*margin: 5px 10px;*/
+    margin: 5px 10px;
     font-size: 16px;
     padding: 4px 10px;
-    background-color: #7dcb45;
-    border-radius: 20px;
+    background-color: #5566f1;
+    /*border-radius: 20px;*/
     border-style: none;
     text-decoration: none;
     display: inline-block;
@@ -187,22 +193,54 @@ header {
 
 /* ABOUT SECTION */
 .about {
-	background-color: #1d3747;
-	color: white;
 	min-height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	background: url(../images/paper.png);
+}
+
+.about .body-section {
+	color: black;
+	display: inline-block;
+	padding: 50px 0px;
+	text-align: center;
+    float: none;
 }
 
 .about-pic {
 	max-width: 325px;
 	max-height: 325px;
-	border-radius: 100%;
-	padding: 20px;
+	padding: 0px;
+	margin: 10px auto;
+	border-radius: 50%;
 }
 
-.about-info {
+.about-tiles{
+	margin: 0px auto;
+	float: none;
+}
+
+.about-tile {
 	padding: 20px;
 	text-align: justify;
-	margin-bottom: 40px;
+}
+
+.about-tile h3 {
+	color: #5566f1;
+	margin: 10px auto;
+	font-size: 24px;
+}
+
+.about-tile p {
+	font-size: 16px;
+	/*border: solid #555 2px;*/
+	padding: 20px;
+	background-color: #fafafa;
+}
+
+.about-tile ul {
+	font-size: 16px;
+	list-style-type: disc;
 }
 
 .about-skills {
@@ -224,8 +262,19 @@ header {
 
 /* PROJECTS SECTION */
 .projects {
-	background-color: #1d3747;
 	min-height: 100vh;
+	margin-right: -25px;
+    margin-left: -25px;
+    background-color: #7a87f2;
+}
+
+.projects .body-section {
+	color: black;
+    display: inline-block;
+    text-align: center;
+    float: none;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .project-info {
@@ -252,11 +301,11 @@ header {
 	width: 100%;
 	height: 100%;
 	display: block;
-	/*box-shadow: 3px 3px 5px 0px black;*/
+	box-shadow: 3px 3px 5px 0px black;
 }
 
 .project-tile {
-	padding: 0px;
+	padding: 10px;
 }
 
 .project-tile:hover .overlay {
@@ -273,9 +322,10 @@ header {
 	right: 0;
 	opacity: 0;
 	transition: .4s ease-out;
-	background-color: #222;
+	background-color: #151515;
 	color: white;
 	padding: 20px;
+	margin: 10px;
 }
 
 .overlay-content {
@@ -298,7 +348,7 @@ header {
     font-size: 16px;
     padding: 4px 10px;
     background-color: white;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     border-style: none;
     text-decoration: none;
     display: inline-block;
@@ -306,12 +356,12 @@ header {
 
 .overlay a:hover {
 	color: white;
-	background-color: #7dcb45;
+	background-color: #5566f1;
 	transition: .25s;
 }
 
 .overlay button:hover {
-	background-color: #7dcb45;
+	background-color: #5566f1;
 	color: white;
 	transition: .25s;
 }
@@ -379,6 +429,9 @@ header {
 .contact {
 	background-color: #222;
 	min-height: 100vh;
+	background: url(../images/paperblack.png);
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .contact-buttons {
